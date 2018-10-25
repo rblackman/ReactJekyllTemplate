@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ page.title }}</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% if page.custom_css %}
+	{% for stylesheet in page.custom_css %}
+	<link rel="stylesheet" href="/css/{{ stylesheet }}.css" />
+	{% endfor %}
+	{% endif %}
+</head>
+
+<body>
+	{{content}}
+</body>
+
+</html>
