@@ -4,10 +4,6 @@ module.exports = {
 	entry: {
 		hello: path.join(__dirname, '/ts/hello.tsx'),
 	},
-	externals: {
-		'react': 'React',
-		'react-dom': 'ReactDOM'
-	},
 	output: {
 		path: path.resolve(__dirname, "js"),
 		filename: "[name].js",
